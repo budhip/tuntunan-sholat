@@ -9,6 +9,11 @@
   Tujuannya untuk memberikan wawasan tentang bagaimana cara melakukan sholat wajib 5 waktu.
 */
 
+/*
+  CARA PENGGUNAAN:
+  Masukkan sebuah angka di variable input yang berada diatas tulisan switch
+*/
+
 //function untuk tata cara sholat per raka'at
 function tataCaraSholat (jumlahRakaat, namaSholat) {
   for (var i = 1; i<=jumlahRakaat; i++) {
@@ -62,20 +67,16 @@ var maghrib = new tuntunanSholat ('Maghrib', 3, 'di waktu senja');
 var isya = new tuntunanSholat ('Isya', 4, 'di malam hari');
 
 //variable
-var jumlahRakaat;
-var namaSholat;
 var input;
 
 //program utama
-input = 1;
+input = 6;
 switch (input) {
   case 1: {
     console.log('Sholat ' +shubuh.sholat+ ' ditunaikan ' +shubuh.waktu+ ' sebanyak ' +shubuh.rakaat+ ' raka\'at.');
     shubuh.ajakan();
     shubuh.bacaNiat();
-    jumlahRakaat = shubuh.rakaat;
-    namaSholat = shubuh.sholat;
-    tataCaraSholat(jumlahRakaat, namaSholat);
+    tataCaraSholat(shubuh.rakaat, shubuh.sholat);
     shubuh.doa();
     break;
   }
@@ -83,9 +84,7 @@ switch (input) {
     console.log('Sholat ' +dzuhur.sholat+ ' ditunaikan ' +dzuhur.waktu+ ' sebanyak ' +dzuhur.rakaat+ ' raka\'at.');
     dzuhur.ajakan();
     dzuhur.bacaNiat();
-    jumlahRakaat = dzuhur.rakaat;
-    namaSholat = dzuhur.sholat;
-    tataCaraSholat(jumlahRakaat, namaSholat);
+    tataCaraSholat(dzuhur.rakaat, dzuhur.sholat);
     dzuhur.doa();
     break;
   }
@@ -93,9 +92,7 @@ switch (input) {
     console.log('Sholat ' +ashar.sholat+ ' ditunaikan ' +ashar.waktu+ ' sebanyak ' +ashar.rakaat+ ' raka\'at.');
     ashar.ajakan();
     ashar.bacaNiat();
-    jumlahRakaat = ashar.rakaat;
-    namaSholat = ashar.sholat;
-    tataCaraSholat(jumlahRakaat, namaSholat);
+    tataCaraSholat(ashar.rakaat, ashar.sholat);
     ashar.doa();
     break;
   }
@@ -103,9 +100,7 @@ switch (input) {
     console.log('Sholat ' +maghrib.sholat+ ' ditunaikan ' +maghrib.waktu+ ' sebanyak ' +maghrib.rakaat+ ' raka\'at.');
     maghrib.ajakan();
     maghrib.bacaNiat();
-    jumlahRakaat = maghrib.rakaat;
-    namaSholat = maghrib.sholat;
-    tataCaraSholat(jumlahRakaat, namaSholat);
+    tataCaraSholat(maghrib.rakaat, maghrib.sholat);
     maghrib.doa();
     break;
   }
@@ -113,9 +108,7 @@ switch (input) {
     console.log('Sholat ' +isya.sholat+ ' ditunaikan ' +isya.waktu+ ' sebanyak ' +isya.rakaat+ ' raka\'at.');
     isya.ajakan();
     isya.bacaNiat();
-    jumlahRakaat = isya.rakaat;
-    namaSholat = isya.sholat;
-    tataCaraSholat(jumlahRakaat, namaSholat);
+    tataCaraSholat(isya.rakaat, isya.sholat);
     isya.doa();
     break;
   }
