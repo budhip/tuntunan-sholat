@@ -6,4 +6,4 @@ Aplikasi tentang tuntunan menunaikan sholat wajib 5 waktu
 </p>
 
 # CARA PENGGUNAAN:
-Masukkan sebuah angka di variable input yang berada diatas tulisan switch :smile:
+Masukkan sebuah angka di variable input yang berada diatas tulisan switch :blush:
